@@ -4,6 +4,7 @@ import { getUserPlaylists, loginUrl, shuffle } from '../services/spotify'
 
 export default function Home() {
   const [playLists, setPlayLists] = useState([]);
+  const [showLoading, setShowLoading] = useState(false)
 
   useEffect(() => {
     if (window.location.hash !== "") {
@@ -29,11 +30,16 @@ export default function Home() {
         <ul>
           {playLists !== [] &&
           playLists.map((ele)=>{
-            return <li onClick={()=>{shuffle(ele.id,ele.length,ele.name)}} key= {ele.id}>{ele.name}</li>
+            return <li onClick={()=>{shuffle(ele.id,ele.length,ele.name);setShowLoading(true)}} key= {ele.id}>{ele.name}</li>
           })
           }
         </ul>
       </div>
+      {showLoading && 
+      <div class="loader" id="loader">
+        <div></div>
+      </div>
+      }
     </div>
   )
 }
