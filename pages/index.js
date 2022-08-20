@@ -36,7 +36,7 @@ export default function Home() {
         </ul>
       </div>
       {showLoading && 
-      <div class="loader" id="loader">
+      <div className="loader" id="loader">
         <div></div>
       </div>
       }
