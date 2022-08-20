@@ -1,6 +1,6 @@
 const SpotifyWebApi = require('spotify-web-api-node');
 export const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectUrl = "http://localhost:3000/";
+const redirectUrl = "https://spotify-playlist-shuffler.vercel.app/";
 const clientId = "2b1886d9552e4eb59d3f9f17848a44af";
 const scopes = [
   "user-read-currently-playing",
