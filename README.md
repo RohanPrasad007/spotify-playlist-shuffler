@@ -2,9 +2,9 @@
 ## Documentation
 
 - **Introduction**
-	Spotify Playlist shuffler is a web app that shuffles a Spotify playlist and makes a new Spotify playlist with the exciting same song in it.
+	Spotify Playlist shuffler is a web app that shuffles a Spotify playlist and makes a new Spotify playlist with the exactly same song in it.
 
-- **Design**
+- **Working**
 	
 	- First, the user is authenticated by Spotify.
 	- After that, with the help of spotify API, we list the playlist that the user has.
